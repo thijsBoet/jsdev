@@ -3,39 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matthijs Boet | Full Stack Javascript Developer</title>
-  <link rel="stylesheet" href="/public/assets/styles/style.css">
-  <script src="/public/assets/js/script.js" defer></script>
+  <title>Matthijs Boet | Fullstack JavaScript Developer</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
   <main>
     <header>
-      <!-- Summary widget -->
-
-      <!-- Activity widget  -->
-
-      <!-- Skills chart widget -->
-
+      <img src="./assets/img/avatar.jpg" alt="Avatar" class="avatar">
+      <div class="header-content">
+        <h1>Hi 🖐<br />My name is Matthijs Boet</h1>
+        <div class="subtitle">
+          Web Aficionado <span class="dot">•</span>
+          UX/UI <span class="dot">•</span>
+          Full Stack Developer <span class="dot">•</span>
+          All Things JavaScript <span class="dot">•</span>
+          Rotterdam, the Netherlands <span role="img" aria-label="Russia">NL</span>
+        </div>
+        <div class="contacts">
+          <a href="https://github.com/thijsBoet" target="_blank" rel="noopener noreferrer">
+            <span class="icon">
+              <img src="./assets/img/logo_github.svg" alt="GitHub" />
+            </span>
+            <span>GitHub</span>
+          </a>
+          <a href="https://profile.codersrank.io/user/thijsboet" target="_blank" rel="noopener noreferrer">
+            <span class="icon">
+              <img src="./assets/img/logo_cr.svg" alt="CodersRank" />
+            </span>
+            <span>CodersRank</span>
+          </a>
+        </div>
+      </div>
+      </div>
     </header>
-
+    <section>
+      <h2>My Coding Activity & Stats</h2>
+      <p class="branding">Powered by <a href="https://profile.codersrank.io/user/thijsboet" target="_blank" rel="noopener noreferrer">CodersRank</a></p>
+      <codersrank-summary
+        class="widget"
+        username="thijsboet"
+        show-avatar="false"
+        show-header="false"
+        min-width="420"
+        branding="false"
+      ></codersrank-summary>
+      <div class="widget activity-widget">
+        <codersrank-activity
+          username="thijsboet"
+          legend="false"
+          labels
+          tooltip
+          step="5"
+          svg-width="1120"
+          branding="false"
+        ></codersrank-activity>
+      </div>
+      
+      <codersrank-skills-chart
+        class="widget"
+        username="thijsboet"
+        legend="false"
+        tooltip
+        labels
+        skills="CSS,HTML,JSON,JavaScript,Less,Makefile,PHP,Python,SCSS,TypeScript,Other"
+        svg-width="1120"
+        svg-height="400"
+        branding="false"
+      ></codersrank-skills-chart>
+    </section>
     <section>
       <h2>Recent Projects</h2>
-      <!-- Portfolio widget  -->
-
+      <p>I am very passionate about building mobile and desktop web applications, user interfaces, and contributing to open-source community by creating great and popular open-source projects.</p>
+      <codersrank-portfolio
+        class="widget"
+        username="thijsboet"
+        grid
+        company="false"
+        branding="false"
+      ></codersrank-portfolio>
     </section>
-
     <section>
       <h2>Work Experience & Education</h2>
-      <!-- Work experience widget  -->
+      <a href="./assets/pdf/cv_en.pdf">English CV </a> | <a href="./assets/pdf/cv_nl.pdf">Dutch CV</a>  
 
-      <!-- Education widget  -->
-
+      <!-- <codersrank-work-experience
+        class="widget"
+        username="thijsboet"
+        logos
+        branding="false"
+      ></codersrank-work-experience>
+      <codersrank-education
+        class="widget"
+        username="thijsboet"
+        branding="false"
+      ></codersrank-education> -->
+      <br>
+      <br>
     </section>
 
-    <footer>
-      <!-- Footer  -->
-      
-    </footer>
+    <footer>Copyright © 2020 - 2021</footer>
   </main>
+
+  <script src="https://unpkg.com/@codersrank/summary/codersrank-summary.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/activity/codersrank-activity.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/portfolio/codersrank-portfolio.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/work-experience/codersrank-work-experience.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/education/codersrank-education.min.js"></script>
+  
 </body>
 </html>
