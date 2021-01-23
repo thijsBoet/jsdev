@@ -179,6 +179,10 @@ codersrank-portfolio {
   --link-margin: 8px;
 }
 
+.block {
+  display:block;
+}
+
 /* Footer */
 footer {
   text-align: center;

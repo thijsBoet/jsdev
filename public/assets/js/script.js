@@ -1,5 +1,4 @@
 const activityWidget = document.getElementById("activity-widget");
-const codersrankSkillsChart = document.getElementById("codersrank-skills-chart");
 const codersrankPortfolio = document.getElementById("codersrank-portfolio");
 
 const isLoading = (elementId) => {
@@ -9,9 +8,9 @@ const isLoading = (elementId) => {
 
   elementId.addEventListener("load", () => {
     getElementById.innerText = "";
+    elementId.classList.add("block")
   });
 }
 
 isLoading(activityWidget);
-isLoading(codersrankSkillsChart);
 isLoading(codersrankPortfolio);
